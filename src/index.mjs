@@ -31,7 +31,7 @@ export default (seconds = defaultSeconds, gradientConfig) => {
 
     const getBoundaries = (sec) => {
         const higherIndex = seconds.findIndex((x) => x >= sec);
-        const lowerIndex = Math.min(0, higherIndex - 1);
+        const lowerIndex = Math.max(0, higherIndex - 1);
         return [seconds[lowerIndex], seconds[higherIndex]];
     };
 
