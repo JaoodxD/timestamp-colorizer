@@ -2,7 +2,16 @@
   "name": "timestamp-colorizer",
   "version": "0.0.1",
   "description": "Package to determine which color to apply to time interval according to configs.",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaoodxD/timestamp-colorizer"
+  },
+  "type": "module",
+  "main": "index.cjs",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
