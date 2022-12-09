@@ -78,6 +78,11 @@ module.exports = (seconds = defaultSeconds, gradientConfig) => {
                 .padStart(2, '0'),
         "#");
 
+    /**
+     * 
+     * @param {number} secs time interval in seconds
+     * @returns {String} hex color
+     */
     const getTimestampColor = (secs) => {
         const x = justify(secs);
 
