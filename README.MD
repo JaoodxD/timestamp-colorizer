@@ -6,4 +6,4 @@ Package to determine which color to apply to time interval according to configs.
 
 01:00:00 (1 hour) would get yellow `#ffff00`.
 
-18:00:00 (18 hours) could be mentioned as long time interval so it'd get red `#b52318` color.
+18:00:00 (18 hours) could be mentioned as long time interval so it'd get $$\textcolor{red}{red}$$ `#b52318` color.
