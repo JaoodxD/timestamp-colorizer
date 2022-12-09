@@ -1,6 +1,7 @@
 {
-  "name": "timestamp-colorizer",
+  "name": "@jaood/timestamp-colorizer",
   "version": "0.0.1",
+  "private": "false",
   "description": "Package to determine which color to apply to time interval according to configs.",
   "repository": {
     "type": "git",
