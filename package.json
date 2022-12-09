@@ -1,0 +1,12 @@
+{
+  "name": "timestamp-colorizer",
+  "version": "0.0.1",
+  "description": "Package to determine which color to apply to time interval according to configs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["timestamp", "interval", "time", "color", "colorize"],
+  "author": "JaoodxD",
+  "license": "ISC"
+}
