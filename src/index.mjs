@@ -1,4 +1,3 @@
-//@ts-check
 'use strict';
 
 /**
@@ -25,10 +24,7 @@ const defaultSeconds = Object.values(intervals).flat();
  * @param {GradientConfig} gradientConfig 
  * @returns 
  */
-export default (seconds = defaultSeconds, gradientConfig) => {
-    //jsDoc can't recognize valid gradint config so here's a kostyl :D
-    gradientConfig = gradientConfig ?? defaultGradientConfig;
-
+export default (seconds = defaultSeconds, gradientConfig = defaultGradientConfig) => {
     const getBoundaries = (sec) => {
         const higherIndex = seconds.findIndex((x) => x >= sec);
         const lowerIndex = Math.max(0, higherIndex - 1);
