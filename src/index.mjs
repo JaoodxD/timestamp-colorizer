@@ -60,7 +60,7 @@ export default (seconds = defaultSeconds, gradientConfig = defaultGradientConfig
             const f = (x) => (color.find(([, x0]) => x === x0)?.[0] ?? color[0][0])[channel];
 
             const higherIndex = color.findIndex(([, x0]) => x0 >= x);
-            const lowerIndex = Math.min(higherIndex - 1, 0);
+            const lowerIndex = Math.max(higherIndex - 1, 0);
 
             return linearInterpolation(f, color[lowerIndex][1], color[higherIndex][1])(x);
 
