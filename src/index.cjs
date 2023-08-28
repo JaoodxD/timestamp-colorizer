@@ -84,6 +84,7 @@ module.exports = (seconds = defaultSeconds, gradientConfig = defaultGradientConf
 
         const [low, high] = getBoundaries(x);
         let normalizedValue = linearInterpolation(f, low, high)(x);
+        if (Number.isNaN(normalizedValue)) normalizedValue = 0;
 
         const getColor = createGradient(gradientConfig);
 
