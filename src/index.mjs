@@ -8,8 +8,7 @@
  * @typedef {ColorPoint[]} GradientConfig Array of color points which represent linear gradient
  */
 
-import config from './config.json';
-
+import config from './config.json' assert { type: 'json' };
 
 const defaultGradientConfig = config.gradientConfig;
 const intervals = config.intervals;
